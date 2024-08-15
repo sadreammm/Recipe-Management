@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edit Recipe</title>
+    <link rel="stylesheet" href="/admin/recipes/style.css">
+    <script src="/admin/recipes/formValidation.js"></script>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <h1 id="company"><a href="/admin"><i>Tastytrails</i></a><img
+                    src="/images/HD-wallpaper-food-logo-phone-thumbnail.jpg" width="60" height="60"></h1>
+            <ul>
+                <li><a href="/admin">Home</a></li>
+                <li><a href="/admin/categories/">Category</a></li>
+                <li><a href="/admin/recipes/">Recipe</a></li>
+                <li><a href="/authentication/logout">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <div class="container">
+            <h1 id="recipe-header">Edit Recipe</h1>
+            <div class="recipe-form">
+                <form action="/recipes/{{id}}/edit" method="post" onsubmit="return validateForm()">
+                    <table>
+                        <tr>
+                            <td><label for="title">
+                                    <h1>Title</h1>
+                                </label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="title" name="title" value="{{title}}"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="category">
+                                    <h2>Category</h2>
+                                </label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="category" name="category" value="{{category}}"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="ingredients">
+                                    <h1>Ingredients</h1>
+                                </label></td>
+                        </tr>
+                        <tr>
+                            <td><textarea id="ingredients" name="ingredients" cols="93"
+                                    rows="10">{{ingredients}}</textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label for="instructions">
+                                    <h1>Instructions</h1>
+                                </label></td>
+                        </tr>
+                        <tr>
+                            <td><textarea id="instructions" name="instructions" cols="93"
+                                    rows="10">{{instructions}}</textarea></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left;">
+                                <br>
+                                <label for="cookTime"><b>Cook Time</b></label>
+                                <input type="text" id="cookTime" name="cookTime" value="{{cookTime}}"
+                                    style="width: 100px;">
+                                &nbsp;&nbsp;
+                                <label for="size"><b>Serving Size</b></label>
+                                <input type="text" id="size" name="size" value="{{size}}" style="width: 100px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="image">
+                                    <h1>Image</h1>
+                                </label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="image" name="image" value="{{image}}"></td>
+                        </tr>
+                        <tr>
+                            <td><br><input type="submit" name="update" value="Update"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

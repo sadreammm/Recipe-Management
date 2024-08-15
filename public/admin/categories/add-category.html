@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Manage Categories</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <h1 id="company"><a href="/admin"><i>Tastytrails</i></a><img
+                    src="/images/HD-wallpaper-food-logo-phone-thumbnail.jpg" width="60" height="60"></h1>
+            <ul>
+                <li><a href="/admin">Home</a></li>
+                <li><a href="/admin/categories/">Category</a></li>
+                <li><a href="/admin/recipes/">Recipe</a></li>
+                <li><a href="/authentication/logout">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="category">
+        <div class="categoryBox">
+            <h1>Manage Categories</h1>
+            <form action="/admin/categories/" method="post" id="categoryForm">
+                <div class="formContainer">
+                    <label for="name">Category Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name.." required>
+                    <br>
+                    <label for="image">Add Image</label>
+                    <input type="text" id="image" name="image" placeholder="Image url.." required>
+                    <br>
+                </div>
+                <br>
+                <input type="submit" name="add">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

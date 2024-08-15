@@ -1,0 +1,231 @@
+header{
+    color: black;
+    height: 90px;
+    width: 102%;  
+    background-color: black;
+    color:white;
+    padding: 5px 0;
+    margin-top: -10px;
+    margin-left: -10px;     
+}
+
+nav ul li{
+    margin-right: 10px;
+    font-size: 20px;
+    list-style: none;
+    display: inline;
+   
+}
+
+body{
+    background-color: white;
+    width:100%;
+    min-height: 100vh; 
+}
+
+.topbar{
+    width: 90%;
+    margin: auto ;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.topbar a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+.topbar nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -6px;
+    background: white;
+    position: absolute;
+    transition: 0.5s;
+}
+.topbar nav ul li a:hover::after{
+    width: 100%;
+}
+
+.topbar h1 a{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.front{
+    width: 102%;
+    background:url('images/THUMBNAIL_Food.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    margin-left: -10px;
+}
+
+h1{
+    padding: 0;
+    margin:0;
+    display: flex;
+    align-items: center;
+    
+}
+.main h2{
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.main h4{
+    margin-bottom: 10px;
+    font-size: 30px;
+   
+}
+.main p{
+   font-size: 20px;
+}
+.search{
+    max-width: 550px;
+    margin:15px auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.search input{
+    width: 650%;
+    padding: 10px;
+    border:0;
+    border-radius: 5px 0 0 5px;
+}
+
+.search button{
+    padding:10px 20px;
+    outline: none;
+    border:0;
+    cursor: pointer;
+    background: black;
+    color:white;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.recipes{
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 10px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#recipe-title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center;
+    display: block;
+}
+#recipe-cat{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+#recipe-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/*recipe.html's css*/
+
+.recipe-container {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.776);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.recipe {
+    margin-top: 20px;
+    
+}
+
+#recipe-title {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#recipe-cat {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#recipe-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.section-title {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 5px;
+}
+
+.recipe-text {
+    font-size: 16px;
+    line-height: 1.6;
+    display: flex;
+}
+
+.recipe-details {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+   
+}
+
+.recipe-detail {
+    flex: 1;
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.recipe-detail b {
+    font-size: 18px;
+}
+
+#myButton{
+    display: none;
+    position: fixed;
+    width: 60px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 12px;
+    margin-top: 30px;
+    right:30px;
+    bottom:10px;
+    cursor: pointer;
+    background-color:black;
+    color: white;
+}
+#myButton:hover{
+    background-color: rgb(241, 233, 233);
+    color:black;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Category Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <table id="categoryTable" border="0">
+        <tr>
+            <td style="width: 200px;">
+                <h1>{{name}}</h1>
+            </td>
+            <td><img src={{image}} width="100px" height="90px"></td>
+            <td>
+                <form action="/admin/categories/{{id}}/delete" method="post" class="form-buttons">
+                    <a href="add-category.html" id="button">Add Category</a>
+                    <input type="submit" name="delete" value="Delete" id="button"
+                            style="background-color: red; color: white; height: auto;">
+                </form>
+            </td>
+        </tr>
+    </table>
+    <button onclick="Top()" id="myButton" title="Scroll to top">Top</button>
+    <script src="/scroll.js"></script>
+</body>
+
+</html>

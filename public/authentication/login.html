@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <link rel="stylesheet" href="/authentication/styles.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>User Login</h2>
+            <form action="/authentication/login" method="POST">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">LOGIN</button>
+            </form>
+            <div class="signup-link">
+                <span>New here? <a href="/authentication/signup">Sign up instead!</a></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

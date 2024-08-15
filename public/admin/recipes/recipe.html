@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TastyTrails HOMEPAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div class="main-content">
+        <div class="recipe-container">
+            <div class="recipe">
+                <h1 id="recipe-title">{{title}}</h1>
+                <p id="recipe-cat"><i>{{category}}</i></p>
+                <img src="{{image}}" id="recipe-img" width="500px" height="500px">
+                <h2 class="section-title">Ingredients</h2>
+                <p class="recipe-text">{{ingredients}}</p>
+                <h2 class="section-title">Instructions</h2>
+                <p class="recipe-text">{{instructions}}</p>
+                <div class="recipe-details">
+                    <div class="recipe-detail">
+                        <b>Cook Time</b>
+                        <p>{{cookTime}}</p>
+                    </div>
+                    <div class="recipe-detail">
+                        <b>Serving Size</b>
+                        <p>{{size}}</p>
+                    </div>
+                </div>
+                <div class="recipe-actions">
+                    <form action="/recipes/{{id}}/delete" method="post">
+                        <a href="add-recipe.html" id="button">Add recipe</a> &nbsp;
+                        <a href="/recipes/{{id}}/edit" id="button">Edit</a>&nbsp;
+                        <input type="submit" name="delete" value="Delete" id="button"
+                            style="background-color: red; color: white;">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <button onclick="Top()" id="myButton" title="Scroll to top">Top</button>
+        <script src="/scroll.js"></script>
+    </div>
+</body>
+
+</html>

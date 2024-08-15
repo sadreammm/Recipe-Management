@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>TastyTrails HOMEPAGE</title>
+</head>
+
+<body>
+    <header>
+        <div class="topbar">
+            <h1><a href='/'><i>TastyTrails</i></a><img src="/images/HD-wallpaper-food-logo-phone-thumbnail.jpg"
+                    width="60" height="60" alt="Logo"></h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/authentication/login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="front">
+        <div class="main">
+            <h2>Welcome to <i>Tastytrails</i> Recipes!</h2>
+            <h4>Unleash the chef within.</h4>
+            <p>Discover Mouth Watering Recipes</p>
+            <form action="/recipes" method="GET" class="search" onsubmit="return validateSearch()">
+                <input type="text" id="search" name="category" placeholder="Search by category...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('/images/background2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container, .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box, .signup-box {
+    background: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 450px;
+}
+
+.login-box h2, .signup-box h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #800080;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #732d91;
+}
+
+.signup-link, .login-link {
+    margin-top: 15px;
+    text-align: right;
+}
+
+.signup-link span, .login-link span {
+    color: #666;
+}
+
+.signup-link a, .login-link a {
+    color: #800080;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.signup-link a:hover, .login-link a:hover {
+    color: #732d91;
+}
+
+header{
+    color: black;
+    height: 90px;
+    width: 100%;  
+    background-color: black;
+    color:white;
+    padding: 5px 0;
+    margin-top: -10px;
+    margin-left: -10px;     
+}
+
+nav ul li{
+    margin-right: 10px;
+    font-size: 20px;
+    list-style: none;
+    display: inline;
+   
+}
+
+
+
+.topbar{
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.topbar a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+.topbar nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -6px;
+    background: white;
+    position: absolute;
+    transition: 0.5s;
+}
+.topbar nav ul li a:hover::after{
+    width: 100%;
+}
+
+.topbar h1 a{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.front{
+    width: 100%;
+    background:url('images/THUMBNAIL_Food.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    margin-left: -10px;
+}
+
+h1{
+    padding: 0;
+    margin:0;
+    display: flex;
+    align-items: center;
+    
+}
+.main h2{
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.main h4{
+    margin-bottom: 10px;
+    font-size: 30px;
+   
+}
+.main p{
+   font-size: 20px;
+}

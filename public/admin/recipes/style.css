@@ -1,0 +1,245 @@
+body {
+            
+    background-color: rgba(129, 120, 100, 0.922);
+
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* It ensures that the layout has uniform width and size */
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Header*/
+.header{
+    background-color: black;
+    width: 100%;
+    color: black;
+    height: 100px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 10px 15px;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: -10px;
+}
+
+
+.header nav ul li{
+    list-style: none;
+    display: inline;
+    margin: 10px 20px;
+}
+.header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: relative;
+}
+.header nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -6px;
+    background: white;
+    position: absolute;
+    transition: 0.5s;
+}
+.header nav ul li a:hover::after{
+    width: 100%;
+}
+.header nav h1 a{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+}
+
+/* Main content wrapper */
+.main-content {
+    flex: 1;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.container{
+    margin-left: 20px;
+    padding: 10px 10px;
+}
+/* recipe */
+#recipe-header{
+    color: rgba(255, 255, 255, 0.776);
+    font-size: 40px;
+}
+#recipe-desc{
+    color: rgba(255, 255, 255, 0.776);
+    font-size: 17px;
+}
+.recipe-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.776);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.recipe {
+    margin-top: 20px;
+}
+
+#recipe-title {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#recipe-cat {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#recipe-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.section-title {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 5px;
+}
+
+.recipe-text {
+    font-size: 16px;
+    line-height: 1.6;
+    display: flex;
+}
+
+.recipe-details {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+   
+}
+
+.recipe-detail {
+    flex: 1;
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.recipe-detail b {
+    font-size: 18px;
+}
+
+.recipe-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+.recipe-actions a{
+    text-decoration: none;
+    color: white;
+}
+
+.recipe-actions button,
+.recipe-actions input[type="submit"] {
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.recipe-actions button:hover,
+.recipe-actions input[type="submit"]:hover {
+    background-color: rgb(241, 233, 233);
+    color:black;
+}
+
+
+.recipe-form{
+    width: 50%;
+    text-align: center;
+    background-color: white;
+    color:black;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px black;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 15px 25px;
+    border: 1px solid black;
+}
+
+.recipe-form label{
+    text-align: left;
+}
+.recipe-form input[type="text"]{
+    width: 700px;
+    height: 30px;
+}
+
+#button{
+    text-decoration: none;
+    cursor: pointer;
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+#button:hover{
+    background-color: rgb(241, 233, 233);
+    color:black;
+    border: 1px solid black;
+}
+
+#myButton{
+    display: none;
+    position: fixed;
+    width: 60px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 12px;
+    margin-top: 30px;
+    right:30px;
+    bottom:10px;
+    cursor: pointer;
+    background-color:black;
+    color: white;
+}
+#myButton:hover{
+    background-color: rgb(241, 233, 233);
+    color:black;
+}
